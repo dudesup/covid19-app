@@ -1,0 +1,28 @@
+<div class="jumbotron jumbotron-fluid" id="home">
+<p class="lead text-center">This is the Covid-19 app!</p> 
+<p class="lead text-center">Global information is shown on the home page. For detailed information, go to the 'Countries'</p>
+<p class="lead text-center">For more info about Covid-19, please click the link below to redirect to the World Health Organization official website.</p>
+<p class="lead">
+  <a class="btn btn-info btn-lg" href="https://www.who.int/" role="button">Go to WHO Website</a>
+</p>
+</div>
+<div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-sm mt-3" >
+        <p-card header="Total Cases" class="text-center"[style]="{'background-color': '#fe8501'}">
+          <div><b>{{info.cases}}</b></div>
+      </p-card>
+      </div>
+      <div class="col-sm mt-3">
+        <p-card header="Total Recovered"[style]="{'background-color': '#5cdb95'}" class="text-center">
+        <div>{{info.recovered}}</div>
+      </p-card>
+      </div>
+      <div class="col-sm mt-3">
+        <p-card header="Total Deaths"[style]="{'background-color': 'black'}" class="text-center">
+        <div>{{info.deaths}}</div>
+      </p-card>
+      </div>
+    </div>
+
+  </div>
